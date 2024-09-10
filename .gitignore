@@ -1,0 +1,60 @@
+# Ignore all node_modules directories
+**/node_modules/
+
+# Ignore build artifacts
+**/dist/
+**/build/
+
+**/.bin/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# npm and yarn specific
+package-lock.json
+yarn.lock
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Spring Boot build artifacts
+target/
+*.jar
+*.war
+*.ear
+*.class
+
+# Maven and Gradle specific
+.mvn/
+.gradle/
+*.iml
+*.jar
+*.war
+*.ear
+
+# Database files
+db/data/
+
+# Miscellaneous
+*.tmp
+*.bak
+*.swp
+
+# Additional configuration files
+*.sublime-project
+*.sublime-workspace
+*.project
+*.classpath
+*.settings/
