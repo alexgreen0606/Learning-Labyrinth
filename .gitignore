@@ -5,22 +5,28 @@
 **/dist/
 **/build/
 
+# Ignore .bin directories
 **/.bin/
 
-# Logs
+# Ignore logs
 *.log
+
+# VS Code settings
+.vscode/
+
+# macOS Finder metadata
+.DS_Store
 
 # Environment files
 .env
 .env.local
 .env.*.local
 
-# npm and yarn specific
+# npm and yarn specific files
 package-lock.json
 yarn.lock
 
 # IDE and editor settings
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -30,24 +36,21 @@ yarn.lock
 Thumbs.db
 
 # Spring Boot build artifacts
-target/
-*.jar
-*.war
-*.ear
-*.class
+**/target/
+**/*.jar
+**/*.war
+**/*.ear
+**/*.class
 
-# Maven and Gradle specific
-.mvn/
-.gradle/
+# Maven and Gradle specific files
+**/.mvn/
+**/.gradle/
 *.iml
-*.jar
-*.war
-*.ear
 
 # Database files
 db/data/
 
-# Miscellaneous
+# Miscellaneous temporary files
 *.tmp
 *.bak
 *.swp
