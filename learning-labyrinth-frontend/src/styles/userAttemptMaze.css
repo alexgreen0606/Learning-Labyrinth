@@ -1,0 +1,58 @@
+.robot-and-message {
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translate(-50%, -50%);
+    width: 1040px;
+    height: 150px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    font-family: "Courier New";
+    background-color: #eeeeee;
+    width: 815px;
+    height: 90px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.fields-and-animation-container {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -30%);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.fields-and-animation {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 20px;
+}
+
+.code-tabs {
+    position: absolute;
+    top: -55px;
+    left: 78px;
+}
+
+.copy-button {
+    position: absolute;
+    left: 55%;
+    top: -10%;
+}
+
+.code-field {
+    width: 600px;
+    height: 350px;
+    margin-right: 80px !important;
+    font: "Copperplate";
+}

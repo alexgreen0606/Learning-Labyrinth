@@ -1,0 +1,24 @@
+.homepage {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: calc(100% - 4rem);
+    position: 'relative';
+}
+
+.mazes {
+    position: absolute;
+    left: 50%;
+    top: 7rem;
+    transform: translateX(-50%);
+}
+
+.paginator {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}

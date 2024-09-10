@@ -1,0 +1,47 @@
+.login-page {
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    width: 446;
+    height: 313;
+    margin-top: 0px;
+}
+
+.login-button-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-button {
+    width: 120px;
+    height: 30px;
+}
+
+.access-type-label {
+    position: absolute;
+    top: -70px;
+}
+
+.link {
+    color: blue;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

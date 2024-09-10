@@ -1,0 +1,21 @@
+.edit-page {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.edit-fields-and-maze {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 20px;
+}
+
+.edit-card {
+    width: 200px;
+    height: 350px;
+    margin-right: 80px;
+}
