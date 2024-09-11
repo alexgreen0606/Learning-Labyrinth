@@ -70,4 +70,4 @@ cd db
 docker compose up
 ```
 
-4. Open `localhost:3000` URL in your browser to start using the app!
+4. Open `localhost:3000` in your browser to start using the app!
