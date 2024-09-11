@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Pagination } from '@mui/material';
+import { Pagination, Box } from '@mui/material';
 import Fab from '@mui/material/Fab';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMazes, clearCurrMaze, setCurrMaze, changeCurrPage } from '../store/mazes'
@@ -126,40 +126,39 @@ const AdminHome = () => {
     }
 
     return (
-        <div className='homepage'>
+        <Box>
             <MenuBar />
-            <div className='container'>
+            <Box className='content-container'>
                 <Tooltip title="Create New Maze" placement='right'>
                     <Fab
                         color='primary'
-                        style={{ position: 'absolute', top: '2rem', left: '2rem' }}
                         onClick={handleNewMazeClick}
+                        sx={{ position: 'absolute', left: '2rem', top: '2rem' }}
                     >
                         <AddIcon />
                     </Fab>
                 </Tooltip>
-                <div className='mazes'>
-                    <div style={{ marginBottom: '5rem', display: 'flex' }}>
+                <Box className='mazes'>
+                    <Box sx={{ marginBottom: '5rem', display: 'flex' }}>
                         <MazeRow
                             mazeList={visibleMazesTopRow}
                             onMazeClick={handleMazeClick}
                         ></MazeRow>
-                    </div>
-                    <div style={{ display: 'flex' }}>
+                    </Box>
+                    <Box sx={{ display: 'flex' }}>
                         <MazeRow
                             mazeList={visibleMazesBottomRow}
                             onMazeClick={handleMazeClick}
                         ></MazeRow>
-                    </div>
-                </div>
-                <div className='paginator'>
-                    <Pagination
-                        count={pageCount}
-                        page={currentPage}
-                        onChange={handlePageChange} />
-                </div>
-            </div>
-        </div>
+                    </Box>
+                </Box>
+            </Box>
+            <Pagination
+                sx={{ position: 'absolute', bottom: '3rem', left: '50%', transform: 'translateX(-50%)' }}
+                count={pageCount}
+                page={currentPage}
+                onChange={handlePageChange} />
+        </Box>
     );
 }
 

@@ -48,7 +48,7 @@ const MenuBar = () => {
     return (
         <Box
             sx={{
-                width: '100%',
+                width: '100vw',
                 backgroundColor: 'primary.dark',
             }
             }
