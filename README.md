@@ -6,11 +6,12 @@ Labyrinth Learner is an interactive Java learning application designed to help j
 
 ## Features
 
-- **Login System**: Users can create accounts and log in to track their progress.
+- **Login System**: Users can create accounts and log in as either an admin or a user.
+- **Admin Users**: Admins can create and manage existing mazes in the catalog.
 - **Maze Challenges**: Players solve increasingly difficult mazes by writing Java code.
-- **Real-time Feedback**: The app provides feedback on whether the robot successfully navigated the maze or not.
+- **Real-time Feedback**: The app compiles and runs the user's code, and animates the robot using the code results.
 - **Code Editor**: Integrated code editor for users to write and test their Java solutions.
-- **Performance Tracking**: Users can view statistics on their maze-solving attempts.
+- **Performance Tracking**: Users can view statistics on their maze attempts, such as number of moves and their most efficient code.
 - **Dockerized Setup**: Easy deployment with Docker.
 
 ## Technology Stack
@@ -27,15 +28,26 @@ Labyrinth Learner is an interactive Java learning application designed to help j
 - **Java Spring Boot**: The main framework that handles the server-side logic, routing, and API endpoints.
 - **JPA Repository**: Used for interacting with the database, providing an abstraction layer to manage persistent data.
 
-## How to Play
+## How to Use
 
-- todo
+### Admins
+
+- **Create Account**: On the login page, sign up by creating a username and password, and select the `Admin` role.
+- **Browse the catalog**: On the homepage, explore the maze catalog, which is sorted from simple to complex mazes.
+- **Create New Mazes**: Click the `+` button to design a new maze. Use the maze grid to designate walls, paths, the start point, and the end point by clicking on the respective cells.
+- **Edit Existing Mazes**:  To modify a maze, simply click on any maze in the catalog. This will open the maze editor, where you can adjust the layout or delete the maze.
+
+### Users
+
+- **Create Account**: On the login page, sign up by creating a username and password, and select the `User` role.
+- **Browse the Catalog**: On the homepage, scroll through the maze catalog, organized by difficulty from simple to complex. A sidebar also highlights the three most popular mazes.
+- **Attempt A Maze**: Click on a maze to open the attempt page. Here, you can write Java code in the provided text field. The code can be compiled or saved. The page will display your best, most recent, and current code attempts. Clicking `Play` will animate the robot through the maze, and the MAZER bot will provide feedback on your submission.
 
 ## Development Intent
 
-This application was developed by a team of student developers as part of the Introduction to Software Engineering class (CS506) at the University of Wisconsin - Madison. The team consisted of five developers, with four members focusing on backend development. I was solely responsible for developing the frontend using React and Redux.
+This application was developed by my team of student developers as part of my Introduction to Software Engineering class (CS506) at the University of Wisconsin - Madison. Our team consisted of five developers, with four members focusing on backend development. I was solely responsible for developing the frontend using React and Redux.
 
-For code related to my work, please refer to the ./learning-labyrinth-frontend directory.
+For code related to my work, please refer to the `./learning-labyrinth-frontend` directory.
 
 ## Prerequisites
 
@@ -48,9 +60,14 @@ For code related to my work, please refer to the ./learning-labyrinth-frontend d
 git clone https://github.com/alexgreen0606/Learning-Labyrinth.git
 ```
 
-2. Run Docker Compose:
+2. From the root folder, navigate to the docker compose folder:
+```bash
+cd db
+```
+
+3. Run Docker Compose:
 ```bash
 docker compose up
 ```
 
-4. Open `localhost:3000` URL in your browser to start using the app!# Labyrinth-Learner
+4. Open `localhost:3000` URL in your browser to start using the app!
