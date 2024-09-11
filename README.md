@@ -1,4 +1,4 @@
-# Labyrinth Learner for Junior Java Developers
+# Labyrinth Learner for Junior Java Developers :robot:
 
 ## Project Overview
 
