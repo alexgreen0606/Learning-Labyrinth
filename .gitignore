@@ -12,19 +12,19 @@
 *.log
 
 # VS Code settings
-.vscode/
+**/.vscode/
 
 # macOS Finder metadata
-.DS_Store
+**/.DS_Store
 
 # Environment files
-.env
-.env.local
-.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
 
 # npm and yarn specific files
-package-lock.json
-yarn.lock
+**/package-lock.json
+**/yarn.lock
 
 # IDE and editor settings
 .idea/
@@ -32,8 +32,8 @@ yarn.lock
 *.swo
 
 # Operating system files
-.DS_Store
-Thumbs.db
+**/.DS_Store
+**/Thumbs.db
 
 # Spring Boot build artifacts
 **/target/
