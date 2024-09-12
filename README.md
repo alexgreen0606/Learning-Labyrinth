@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Labyrinth Learner is an interactive Java learning application designed to help junior developers test and improve their Java skills. Users can log in and solve mazes by writing Java code that navigates a robot through the maze. This project is aimed at providing a fun and educational experience for those interested in Java programming.
+Learning Labyrinth is an interactive Java learning application designed to help junior developers test and improve their Java skills. Users can log in and solve mazes by writing Java code that navigates a robot through the maze. This project is aimed at providing a fun and educational experience for those interested in Java programming.
 
 ## Features
 
