@@ -45,7 +45,7 @@ Learning Labyrinth is an interactive Java learning application designed to help 
 
 ## Development Intent
 
-This application was developed by my team of student developers as part of my Introduction to Software Engineering class (CS506) at the University of Wisconsin - Madison. Our team consisted of five developers, with four members focusing on backend development. I was solely responsible for developing the frontend using React and Redux.
+This application was developed by my team of student developers as part of our Introduction to Software Engineering class (CS506) at the University of Wisconsin - Madison. Our team consisted of five developers, with four members focusing on backend development. I was solely responsible for developing the frontend using React and Redux.
 
 For code related to my work, please refer to the `./learning-labyrinth-frontend` directory.
 
